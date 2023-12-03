@@ -9,7 +9,66 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+nav {
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+}
+
+/* nav top styles */
+
+.nav-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo{
+    height: 70px;
+    width: auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color:  grey;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
 .search-icon {
     width: 20px;
     height: 20px;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-input::placeholder {
+    color: lightgrey;
+}
+
+.limited-offer {
+    font-size: 20px;
+    border-bottom: 2px solid greenyellow;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+/* nav bottom styles */
+
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    padding: 0 25px;
+    cursor: pointer;
+    color: lightgrey;
+    font-weight: 400;
 }
