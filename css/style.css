@@ -7,6 +7,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    height: 100vh;
+    /* overflow: hidden; */
 }
 
 nav {
@@ -71,4 +73,61 @@ nav {
     cursor: pointer;
     color: lightgrey;
     font-weight: 400;
+}
+
+/*slider styles */
+
+.slider {
+    background: url(https://cdn.pixabay.com/photo/2012/03/03/23/06/wall-21534_1280.jpg);
+    clip-path: polygon(0 0, 100% 0, 87% 100%, 0 78%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    max-height: 75%;
+}
+
+.slider-wrapper {
+    display: flex;
+    width: 500vw;
+}
+
+.slider-item {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-img {
+    width: 50%;    
+}
+
+.flip-horizontal {
+    transform: scaleX(-1);
+}
+
+.slider-title {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+.slider-price {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 1);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 10px
 }
