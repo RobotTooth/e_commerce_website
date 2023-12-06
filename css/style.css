@@ -79,7 +79,7 @@ nav {
 
 .slider {
     background: url(https://cdn.pixabay.com/photo/2012/03/03/23/06/wall-21534_1280.jpg);
-    clip-path: polygon(0 0, 100% 0, 87% 100%, 0 78%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -91,6 +91,13 @@ nav {
     width: 500vw;
 }
 
+.slider-bg {
+    width: 50%;
+    height: 87%;
+    border-radius: 50%;
+    position: absolute;
+}
+
 .slider-item {
     width: 100vw;
     display: flex;
@@ -100,7 +107,8 @@ nav {
 }
 
 .slider-img {
-    width: 50%;    
+    width: 50%;
+    z-index: 1;    
 }
 
 .flip-horizontal {
@@ -116,6 +124,7 @@ nav {
     font-weight: 900;
     text-shadow: 10px 10px 4px rgba(0, 0, 0, 1);
     text-align: center;
+    z-index: 1;
 }
 
 .slider-price {
@@ -125,9 +134,73 @@ nav {
     color: white;
     font-size: 50px;
     font-weight: 300;
-    text-shadow: 10px 10px 4px rgba(0, 0, 0, 1);
     text-align: center;
     border: 2px solid white;
     border-radius: 4px;
-    padding: 10px
+    padding: 10px;
+    z-index: 1;
+}
+
+.buy-button {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0 5px;
+    color: white;
+    border: 1px solid grey;
+    background-color: black;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.buy-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.slider-item:nth-child(1) .slider-bg {
+    background-color: rgb(60, 1, 60);
+}
+
+.slider-item:nth-child(2) .slider-bg {
+    background-color: rgb(50, 75, 220);
+}
+
+.slider-item:nth-child(3) .slider-bg {
+    background-color: rgb(143, 111, 31);
+}
+
+.slider-item:nth-child(4) .slider-bg {
+    background-color: rgb(154, 23, 141);
+}
+
+.slider-item:nth-child(5) .slider-bg {
+    background-color: rgb(98, 215, 236);
+}
+
+.slider-item:nth-child(1) .slider-price {
+    color: purple;
+    background-color: lightgrey;
+}
+
+.slider-item:nth-child(2) .slider-price {
+    color: rgb(50, 75, 220);
+    background-color: lightgrey;
+}
+
+.slider-item:nth-child(3) .slider-price {
+    color: rgb(143, 111, 31);
+    background-color: lightgrey;
+}
+
+.slider-item:nth-child(4) .slider-price {
+    color: rgb(154, 23, 141);
+    background-color: lightgrey;
+}
+
+.slider-item:nth-child(5) .slider-price {
+    color: rgb(98, 215, 236);
+    background-color: lightgrey;
 }
