@@ -204,3 +204,9 @@ nav {
     color: rgb(98, 215, 236);
     background-color: lightgrey;
 }
+
+/* feature section */
+
+.feature-img {
+    max-width: 5rem;
+}
