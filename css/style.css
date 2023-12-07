@@ -7,8 +7,6 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    height: 100vh;
-    /* overflow: hidden; */
 }
 
 nav {
@@ -84,11 +82,13 @@ nav {
     background-repeat: no-repeat;
     background-position: center top;
     max-height: 75%;
+    overflow: hidden;
 }
 
 .slider-wrapper {
     display: flex;
     width: 500vw;
+    transition: all 1s ease-in-out;
 }
 
 .slider-bg {
