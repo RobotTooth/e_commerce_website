@@ -274,13 +274,13 @@ nav {
     height: 2rem;
     width: 2rem;
     border-radius: .3125rem;
-    background-color: black;
+    background-color: rgb(195, 57, 71);
     margin-right: 0.3125rem;
     cursor: pointer;
 }
 
 .color:last-child {
-    background-color: darkblue;
+    background-color: red;
 }
 
 .size {
