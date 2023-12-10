@@ -111,10 +111,6 @@ nav {
     z-index: 1;    
 }
 
-.flip-horizontal {
-    transform: scaleX(-1);
-}
-
 .slider-title {
     position: absolute;
     top: 10%;
