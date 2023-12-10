@@ -264,10 +264,50 @@ nav {
 }
 
 .product-desc {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: grey;
+    margin-bottom: 20px;
 }
 
 .colors, .sizes {
     display: flex;
+    margin-bottom: 20px;
+}
+
+.color {
+    height: 2rem;
+    width: 2rem;
+    border-radius: .3125rem;
+    background-color: black;
+    margin-right: 0.3125rem;
+    cursor: pointer;
+}
+
+.color:last-child {
+    background-color: darkblue;
+}
+
+.size {
+    padding: 5px 20px;
+    border: 1px solid grey;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.product-button {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid grey;
+}
+
+.product-button:hover {
+    background-color: white;
+    color: black;
 }
