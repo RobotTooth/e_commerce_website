@@ -132,7 +132,7 @@ nav {
     top: 30%;
     left: 10%;
     color: white;
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: 300;
     text-align: center;
     border: 2px solid white;
@@ -145,7 +145,7 @@ nav {
     position: absolute;
     top: 50%;
     right: 10%;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 900;
     padding: 0 5px;
     color: white;
@@ -255,11 +255,11 @@ nav {
     top: 10%;
     right: 0;
     width: 40%;
-    padding: 50px;
+    padding: 3rem;
 }
 
 .product-title {
-    font-size: 75px;
+    font-size: 6.5rem;
     font-weight: 900;
 }
 
@@ -404,4 +404,92 @@ label {
 .close:hover {
     color: white;
     background-color: rgba(166, 162, 162, 0.75);
+}
+
+/* media queries */
+
+@media screen and (max-width: 480px) {
+
+    /* nave section */
+
+    .search {
+        display: none;
+    }
+  
+    .nav-top {
+        flex-direction: column;
+    }
+  
+    .nav-bottom {
+        flex-direction: column;
+    }
+
+    /* slider section */
+
+    .slider {
+        clip-path: none;
+    }
+
+    .slider-title {
+        display: none;
+    }
+
+    .slider-price {
+        top: 5%;
+        left: 5%;
+        padding: 4px;
+        font-size: 1.5rem;
+    }
+
+    .buy-button {
+        top: unset;
+        bottom: 0;
+        right: 0;
+        font-size: 1.5rem;
+    }
+
+    /* features section */
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-bottom: 1rem;
+    }
+
+    .feature-img {
+        max-width: 3rem;
+    }
+
+    /* product section */
+
+    .product {
+        position: unset;
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-img {
+        width: 90%;
+    }
+
+    .product-details {
+        position: unset;
+        padding: .05rem;
+        width: 90%;
+    }
+
+    .product-title {
+        font-size: 2rem;
+    }
+
+    .product-desc {
+        text-wrap: wrap;
+        font-size: 1.2rem;
+    }
+    
+
 }
