@@ -315,8 +315,93 @@ nav {
 /* payment section */
 
 .payment {
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: 75%;
     background-color: white;
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 8px 5px 16px rgba(166, 162, 162, 0.75);
+    -moz-box-shadow: 0px 8px 5px 16px rgba(166, 162, 162, 0.75);
+    box-shadow: 0px 8px 5px 16px rgba(166, 162, 162, 0.75);
+}
+
+.pay-title {
+    font-size: 1.25rem;
+    color: lightgray;
+    margin: 20px 0;
+}
+
+label {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.pay-input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.pay-input::placeholder {
+    color: lightgray;
+}
+
+.card-icons {
+    display: flex;
+}
+.card-icon {
+    max-width: 40px;
+    margin-right: 10px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm {
+    width: 30%;    
+}
+
+.pay-button {
+    height: 40px;
+    background-color: rgb(63, 205, 158);
+    color: #4e4c4c;
+    font-size: medium;
+    font-weight: 600;
+    left: 0;
+    margin-top: 20px;
+    border: none;
+    -webkit-box-shadow: 0px 1px 5px 5px rgba(166, 162, 162, 0.75);
+    -moz-box-shadow: 0px 1px 5px 5px rgba(166, 162, 162, 0.75);
+    box-shadow: 0px 1px 5px 5px rgba(166, 162, 162, 0.75);
+    cursor: pointer;
+}
+
+.close {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: rgba(166, 162, 162, 0.75);
+    border: 1px solid rgba(166, 162, 162, 0.75);
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: white;
+    background-color: rgba(166, 162, 162, 0.75);
 }
