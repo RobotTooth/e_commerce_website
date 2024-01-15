@@ -124,3 +124,14 @@ currentProductSizes.forEach((size, index) => {
     })
 })
 
+let payWindow = document.querySelector(".payment");
+let buyButton = document.querySelector(".product-button");
+let closeButton = document.querySelector(".close");
+
+buyButton.addEventListener("click", () => {
+    payWindow.style.display = "flex";
+})
+
+closeButton.addEventListener("click", () => {
+    payWindow.style.display = "none";
+})
