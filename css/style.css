@@ -201,7 +201,7 @@ nav {
 }
 
 .slider-item:nth-child(5) .slider-price {
-    color: rgb(98, 215, 236);
+    color: rgb(60, 70, 71);
     background-color: lightgrey;
 }
 
@@ -310,4 +310,13 @@ nav {
 .product-button:hover {
     background-color: white;
     color: black;
+}
+
+/* payment section */
+
+.payment {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
 }
