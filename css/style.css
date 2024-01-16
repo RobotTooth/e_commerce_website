@@ -330,6 +330,7 @@ nav {
     -webkit-box-shadow: 0px 8px 5px 16px rgba(166, 162, 162, 0.75);
     -moz-box-shadow: 0px 8px 5px 16px rgba(166, 162, 162, 0.75);
     box-shadow: 0px 8px 5px 16px rgba(166, 162, 162, 0.75);
+    z-index: 2;
 }
 
 .pay-title {
